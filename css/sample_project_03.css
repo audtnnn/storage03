@@ -61,13 +61,21 @@ img {
 }
 
 #header #nav ul.depth1 > li:nth-child(1) {
-    margin: 0 0 10px 0;
+    margin: 0 10px 0 0;
+}
+#header #nav ul.depth1 > li:nth-child(3) {
+    width: 140px;
 }
 #header #nav ul.depth1 > li:nth-child(4) {
+    width: 140px;
+}
+#header #nav ul.depth1 > li:nth-child(5) {
     margin: 0 0 0 10px;
+    width: 145px;
 }
 #header #nav ul.depth1 > li {
     position: relative;
+    width: 130px;
 }
 #header #nav ul.depth1 > li:hover .depth2 li{
     display: block;
@@ -76,7 +84,7 @@ img {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 140px;
+    width: 100%
 }
 
 #header #nav ul.depth2 li {
@@ -88,6 +96,7 @@ img {
     padding: 10px 30px;
     transition: all 0.4s;
     width: 100%;
+    text-align: center;
 }
 #header #nav ul.depth2 li a {
     display:block;
