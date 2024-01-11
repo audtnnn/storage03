@@ -38,6 +38,7 @@ img {
     left:0;
     width: 100%;
     z-index: 99;
+    backgroudn-color: #fff;
 }
 #header .icon {
     float: left;
@@ -97,6 +98,7 @@ img {
     transition: all 0.4s;
     width: 100%;
     text-align: center;
+    backgroudn-color: #fff;
 }
 #header #nav ul.depth2 li a {
     display:block;
