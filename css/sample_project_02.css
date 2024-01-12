@@ -1,0 +1,487 @@
+/* sample_project_02.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cf::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: "Noto Sans KR";
+}
+
+#header { 
+    border: 0px solid black;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+#header h1 {
+    float: left;
+    padding: 20px 0;
+}
+#header .row {
+    padding: 0px 15px;
+}
+
+#header #nav {
+    float: right;
+    font-family: "Noto Sans KR";
+    font-size: 14px;
+    font-weight: 900;
+    color: #1f262d;
+}
+
+
+.row #nav .depth1 > li {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+}
+.row #nav .depth1 > li > a::after {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    font-family: "FontAwesome";
+    font-size: 12px;
+    content: "\f107";
+    opacity: 0.3;
+}
+.row #nav .depth1 > li > a {
+    height: 92px;
+    line-height: 92px;
+    display: block;
+    padding: 0 25px 0 15px;
+    position: relative;
+}
+.row #nav .depth1 > li > a:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.row #nav .depth1 > li:hover .depth2 {
+    display: block;
+}
+.row #nav .depth2 > li > a:hover {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+.row #nav .depth2 {
+    font-size: 13px;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 200px;
+    background-color: #333;
+    color: #ccc;
+    font-size: 13px;
+    font-weight: 300;
+    display: none;
+}
+.row #nav .depth2 > li > a {
+    display: block;
+    padding: 7px 15px;
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+#section .slide01 {
+    position: relative;
+    /* background-image: url(../images/mainslide3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat; */
+    background: url(../images/mainslide3.jpg) no-repeat center / cover;
+    height: 600px;
+}
+
+#section .slide01 .text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+#section .text p {
+    font-size: 20px;
+    font-family: "Noto Sans KR";
+}
+
+#section .text h2 {
+    font-size: 58px;
+    margin: 8px 0px 60px;
+    text-shadow: 1px 1px black;
+}
+
+
+#section .text a {
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    border: 2.5px solid white;
+    padding: 10px 16px;
+    border-radius: 3px;
+}
+
+#section .Our_company {
+    padding: 50px 0px 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#section .Our_company .row {
+    text-align: center;
+    overflow: hidden;
+    padding: 0px 15px;
+}
+#section .Our_company .row h2 {
+    font-family: 'Noto Sans KR';
+    font-size: 26px;
+    padding: 0px 0px 10px;
+    font-weight: 200;
+    color: #414141;
+}
+#section .Our_company .row p.slogun {
+    font-size: 14px;
+    margin: 1.4px 0px 30px;
+    font-weight: 200;
+    color: #666;
+}
+
+#section .Our_company .row ul li {
+    float: left;
+    width: 33.3%;
+    padding: 0px 15px;
+    text-align: left;
+    color: #666666
+}
+#section .Our_company .row ul li h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 20px 0px 32px;
+    color: #414141;
+}
+#section .Our_company .row ul li p {
+    font-size: 14px;
+    margin: 1.4px 0px 30px;
+    font-weight: normal;
+    color: #666;
+}
+
+#section .Our_company .row ul li img {
+    height: 430px;
+
+}
+#section .Our_company .row ul li a {
+    display: inline-block;
+    font-size: 12px;
+    color: black; 
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+#section .Our_company .row ul li a:hover {
+    background-color: black;
+    color: white;
+}
+#section .Our_company .row ul li img {
+    transition: all 0.2s;
+}
+#section .Our_company .row ul li div.photo {overflow: hidden;}
+#section .Our_company .row ul li img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+#section .product {
+    padding: 50px 0px;
+}
+
+#section .product .row {
+    text-align: center;
+}
+#section .product .row .title {
+    margin: 0px 0px 40px;
+}
+
+#section .product .row .title h1 {
+    padding: 10px;
+    font-size: 36px;
+    color: #414141;
+}
+#section .product .row .title p {
+    padding: 1.4px 0px 30px;
+    font-size: 14px;
+    color: #666;
+}
+#section .product .row .title a {
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #222;
+    transition: all 0.2s;
+}
+#section .product .row .title a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+#section .product .sample {
+    overflow: hidden;
+}
+#section .product .sample ul li {
+    float: left;
+    width: 33.3%;
+    margin: 0px 0px 10px;
+}
+#section .product .sample ul li img {
+    padding: 3px;   
+}
+#section .product .sample ul li h2 {
+    font-size: 13px;
+    font-weight: normal;
+    color: #333;
+    margin: 0 0 5px;
+    padding: 8px 0px;
+}
+#section .product .sample ul li p {
+    margin: 0 0 5px;
+    padding: 8px 0px;
+    font-size: 13px;
+    color: #999999;
+}
+#section .product .sample ul li .photo img {
+    transition: all 0.5s;
+}
+
+#section .product .sample ul li .photo img:hover {
+    opacity: 0.6;
+}
+
+
+
+#section .notice {
+    background-image: url(../images/mainbrand3-min.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 456px;
+    width: 100%;
+    position: relative;
+    top:0;
+    left:0;
+}
+
+#section .notice .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+#section .notice .slide_outer2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#section .notice .slide_outer2 .slide{
+    color: #fff;
+    text-align: center;
+}
+
+#section .notice .slide_outer2 .slide .text1 h2 {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+#section .notice .slide_outer2 .slide .text1 h3 {
+    font-size: 24px;
+    margin: 32px 0px;
+}
+#section .notice .slide_outer2 .slide .text1 p {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 30px;
+}
+
+#section .notice .slide_outer2 .slide .text1 a {
+    font-size: 12px;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    transition: all 0.2s;
+    font-weight: normal;
+}
+#section .notice .slide_outer2 .slide .text1 a:hover {
+    background-color: #000;
+}
+
+
+#section .companyinfo {
+    padding: 50px 0px;
+}
+
+#section .companyinfo ul.row {
+    overflow: hidden;
+    padding: 0px 15px;
+}
+    
+#section .companyinfo ul.row li {
+    text-align: center;
+    float: left;
+    width: 25%;
+    color: #fff;
+    padding: 20px 15px;
+    height: 300px;
+}
+
+#section .companyinfo ul.row li img {
+    width: 43px;
+    height: 43px;
+}
+#section .companyinfo ul.row li > a {
+    display: inline-block;
+    padding: 20px 0px 0px;
+}
+
+
+#section .companyinfo ul.row li h3 {
+    padding: 20px 0px 7px;
+    font-size: 30px;
+    font-weight: normal;
+}
+#section .companyinfo ul.row li p {
+    margin: 10px 0px 0px;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+
+#section .companyinfo ul.row li div {
+    padding: 30px 0px 0px;
+}
+
+#section .companyinfo ul.row li:nth-child(1) {
+    background-color: #72C9C3;
+}
+#section .companyinfo ul.row li:nth-child(2) {
+    background-color: #364759;
+}
+#section .companyinfo ul.row li:nth-child(3) {
+    background-color: #E0E1E1;
+    color: #222;
+}
+#section .companyinfo ul.row li:nth-child(4) {
+    background-color: #307CAE;
+}
+
+
+#section .contact {
+    padding: 50px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#section .contact h2 {
+    font-size: 36px;
+    color: #414141;
+    margin: 0 0 50px;
+}
+#section .contact .position {
+    font-size: 14px;
+    color: #444;
+}
+
+#section .contact .position h3 {
+    font-size: 26px;
+    color: #414141;
+    margin: 50px 0 0;
+}
+
+#section .contact .position .addr {
+    color: #666;
+    margin: 2px 0 30px;
+}
+
+#section .contact .sns {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+#section .contact .sns a {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #32343e;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 44px;
+    margin: 0px 5px;
+}
+
+#footer {
+    font-size: 12px;
+    background-color: #ededed;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+#footer .row h1 {
+    font-size: 14px;
+}
+#footer address {
+    font-style: normal;
+    margin: 20px 0px 10px;
+}
+
+#footer address p {
+    line-height: 1.5em;
+}
+#footer address p .email {
+    display: block;
+}
+
+#footer address p span {
+    margin: 0 9px;
+}
