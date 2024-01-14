@@ -119,7 +119,7 @@ img {
 
 #section .slide_outer .slide_inner .slide {
     background-image: url(../images/main02.jpg);
-    height: 900px;
+    height: 750px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -277,14 +277,14 @@ img {
 
 
 #section .business {
-    margin: 120px 0 120px;
+    padding: 120px 0;
+    text-align: center;
 }
 
 #section .business .row .textarea {
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: -1px;
     word-spacing: 2px;
-    text-align: center;
     margin: 0 0 80px;
     color: #333;
 }
@@ -296,11 +296,14 @@ img {
 }
 #section .business .row .textarea p {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
 }
 #section .business .row .textarea p span {
     display: block;
     line-height: 2em;
+}
+#section .business .row .product_img ul {
+    overflow: hidden;
 }
 #section .business .row .product_img ul li {
     float: left;
@@ -312,15 +315,16 @@ img {
     display: block;
     position: relative;
 }
-#section .business .row .product_img ul li a img {
-    transition: all 0.5s
+#section .business .row .product_img ul li img {
+    transition: all 0.5s;
 }
-
 #section .business .row .product_img ul li:hover  img{
     transform: scale(1.2);
-    filter: brightness(0.5);
+    transform-origin: top center;
 }
-
+#section .business .row .product_img ul li:hover .reveal {
+    opacity: 1;
+}
 #section .business .row .product_img ul li > a .reveal {
     text-align: center;
     font-family: 'Noto Sans KR';
@@ -333,6 +337,157 @@ img {
     right: 0%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    /* display: none; */
     padding-top: 65%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#section .best {
+    background: url(../images/banner04.jpg) center / cover;
+    height: 580px;
+    padding-top: 100px;
+}
+#section .best .row {
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    color: #333;
+    height: 210px;
+}
+#section .best .row h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+#section .best .row span {
+    display: block;
+}
+#section .best .row p {
+    font-size: 15px;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+#section .contact {
+    margin-top: -260px;
+    padding: 0 30px 70px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+}
+#section .contact .row {
+    overflow: hidden;
+}
+#section .contact .row .map {
+    float: left;
+    width: 50%;
+}
+#section .contact .row .query {
+    font-family: 'Noto Sans KR';
+    float: left;
+    width: 50%;
+    height: 400px;
+    background: #fff;
+    padding: 60px 24px 0 96px;
+    font-weight: 600;
+    color: #333;
+}
+#section .contact .row .query h3 {
+    font-size: 25px;
+    margin: 0 0 20px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+#section .contact .row .query p.greeting {
+    font-size: 17px;
+    margin: 0 0 30px;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+#section .contact .row .query p.address {
+    font-size: 14px;
+    line-height: 1.8em;
+}
+#section .contact .row .query p.address span {
+    display: block;
+}
+
+#section .contact .row .query p.btn {
+    margin: 60px 0 0 0px;
+}
+#section .contact .row .query p.btn a {
+    font-size: 20px;
+    padding: 15px 50px;
+    border: 1px solid #000;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 7px;
+}
+#section .contact .row .query p.btn a:nth-child(2) {
+    background: #333;
+    color: #fff;
+}
+
+#footer {
+    padding: 30px 0 20px;
+}
+
+#footer .row {
+    overflow: hidden;
+} 
+#footer .row .logo {
+    float: left;
+    text-align: center;
+    line-height: 206px;
+    height: 156px;
+    padding: 0 10px;
+}
+#footer .row .btmmenu {
+    float: right;
+    height: 156px;
+}
+#footer .row .btmmenu {
+    overflow: hidden;
+}
+
+#footer .row .btmmenu .company_info {
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    float: left;
+    color: #555;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+#footer .row .btmmenu .sns {
+    float: right;
+    margin :60px 0 0 270px;
+}
+#footer .row .btmmenu .sns a {
+    display: inline-block;
+    padding: 5px;
+    color: #777;
+    font-size: 14px;
+}
+#footer .row .btmmenu .sns a:hover {
+    color: #4169e1;
+}
+#footer .row .btmmenu .detail_menu a {
+    font-size: 14px;
+    margin: 0 15.5px;
+    padding: 13px 0;
+    display: inline-block;
+}
+#footer .row .btmmenu .detail_menu > a:nth-child(1) {
+    margin: 0 15.5px 0 0;
+}
+#footer .row .btmmenu .detail_menu > a:nth-child(5) {
+    margin: 0 0 0 15.5px;
+}
+
+#footer .row .btmmenu .address {
+    font-size: 13px;
+    margin: 10px 0 20px;
+    padding: 10px 0;
 }
