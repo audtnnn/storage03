@@ -119,8 +119,8 @@ img {
 
 #section .slide_outer .slide_inner {
     position: relative;
-  }
-  #section .slide_outer .slide_inner button.slick-arrow {
+}
+#section .slide_outer .slide_inner button.slick-arrow {
     border: none;
     background: none;
     font-size: 50px;
@@ -129,24 +129,24 @@ img {
     top: 50%;
     cursor: pointer;
   }
-  #section .slide_outer .slide_inner button.slick-next {
+#section .slide_outer .slide_inner button.slick-next {
     right: 50px;
   }
-  #section .slide_outer .slide_inner button.slick-prev {
+#section .slide_outer .slide_inner button.slick-prev {
     left: 50px;
     z-index: 999;
   }
-  #section .slide_outer .slide_inner ul.slick-dots {
+#section .slide_outer .slide_inner ul.slick-dots {
     position: absolute;
     bottom: 50px;
     left: 50%;
     transform: translate(-50%);
   }
-  #section .slide_outer .slide_inner ul.slick-dots li {
+#section .slide_outer .slide_inner ul.slick-dots li {
     display: inline-block;
     margin: 0 5px;
   }
-  #section .slide_outer .slide_inner ul.slick-dots li button {
+#section .slide_outer .slide_inner ul.slick-dots li button {
     width: 9px;
     height: 9px;
     background: rgba(255, 255, 255, 0.5);
@@ -154,15 +154,23 @@ img {
     text-indent: 9999px;
     overflow: hidden;
     border: none;
-  }
-  #section .slide_outer .slide_inner ul.slick-dots li.slick-active button {
+}
+#section .slide_outer .slide_inner ul.slick-dots li.slick-active button {
     background: rgba(255, 255, 255, 1);
-  }
-  #section .homemain {
+}
+#section .homemain {
     width: 100%;
-    background-color: gray;
-  }
-
+}
+#section .slide_outer {
+    position: relative;
+}
+#section .slide_outer .plapau {
+    position: absolute;
+    left: 50%;
+    bottom: 48px;
+    margin-left: 60px;
+    color: #fff;
+}
 
 
 
@@ -194,19 +202,27 @@ img {
     color: #fff;
     letter-spacing: -1px;
     font-family: 'Noto sans KR'
-    
+}
+#section .slick-current.slick-active .slide .text h2 {
+    animation: fadeInUp 1s 1 both 0.5s;
 }
 #section .slide_outer .slide_inner .slide .text h2 {
     font-size: 35px;
     margin: 0 0 25px;
     font-style: normal;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
 }
-
+#section .slick-current.slick-active .slide .text p {
+    animation: fadeInUp 1s 1 both 0.5s;
+}
 #section .slide_outer .slide_inner .slide .text p {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
     word-spacing: 2px;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
 }
 #section .company {
     text-align: center;
