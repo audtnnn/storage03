@@ -1,0 +1,433 @@
+@media screen and (max-width: 1220px) {
+    .row {
+        margin: 0 auto;
+        padding: 0 0px;
+        max-width: 1220px;
+    }
+}
+@media screen and (max-width:995px) {
+    #header {
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        z-index: 99;
+        background-color: #fff;
+        padding: 0 0px;
+    }
+    #header .icon a{ 
+        height: 65px;
+    }
+    #header .icon {
+        float: left;
+        padding: 0 0 0 30px;
+        height: 65px;
+    }
+    #header #nav {
+        float: right;
+        padding: 0 0 0;
+        display: none;
+        width: 100%;
+    }
+    #header .row .openmenu {
+        display: block;
+        float: right;
+        height: 65px;
+        line-height: 65px;
+        font-size: 25px;
+        padding: 0 30px 0 0;
+    }
+    #header #nav ul.depth1 > li {
+        float: none;
+        margin: 0px 0px;
+        padding: 0px 0px;
+        font-family: 'Noto Sans KR';
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
+        letter-spacing: -0.8px;
+        width: 100%;
+        height: auto;
+    }
+    #header #nav ul.depth1 > li > a {
+        display: block;
+        border-top: 0px solid #d4d4d4;
+        border-bottom: 1px solid #d4d4d4;
+        padding: 0 30px 0;
+        line-height: 50px;
+        height: auto;
+    }
+    #header #nav ul.depth1 > li > a::after {
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 0;
+        font-family: "FontAwesome";
+        font-size: 12px;
+        content: "\f107";
+        opacity: 0.3;
+    }
+
+
+    #header #nav ul.depth1 > li:nth-child(1) {
+        margin: 0 10px 0 0;
+        width: 100%;
+    }
+    #header #nav ul.depth1 > li:nth-child(2) {
+        width: 100%;
+    }
+    #header #nav ul.depth1 > li:nth-child(3) {
+        width: 100%;
+    }
+    #header #nav ul.depth1 > li:nth-child(4) {
+        width: 100%;
+    }
+    #header #nav ul.depth1 > li:nth-child(5) {
+        margin: 0 0 0 0px;
+        width: 100%;
+    }
+    #header #nav ul.depth1 > li {
+        position: relative;
+        margin: 0 0px 0 0px;
+        width: 130px;
+    }
+    #header #nav ul.depth1 > li:hover .depth2 li{
+        display: block;
+    }
+    #header #nav ul.depth1 > li:hover > a {
+        background:#000;
+        color: #fff;
+
+    }
+    #header #nav ul.depth2 {
+        display: block;
+        position: static;
+        top: 100%;
+        left: 0;
+        width: 100%
+    }
+    
+    #header #nav ul.depth2 li {
+        border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+        display: block;
+        padding: 10px 30px;
+        transition: all 0.4s;
+        width: 100%;
+        text-align: left;
+        background-color: #fff;
+    }
+    #header #nav ul.depth2 > li a {
+        display: block;
+    }
+    
+    #header #nav ul.depth2 li:hover {
+        background: #000;
+        color: #fff
+    }
+    /* slide 구역 */
+    #section .slide_outer .slide_inner .slide {
+        min-height: 356px;
+        height: 50vw;
+        position: relative;
+    }
+    #section .slide_outer .slide_inner .slide .text {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        letter-spacing: -1px;
+        font-family: 'Noto sans KR';
+        width: 100%;
+    }
+    #section .slide_outer .slide_inner .slide .text h2 {
+        font-size: 20px;
+        margin: 0 0 25px;
+        font-style: normal;
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    #section .slide_outer .slide_inner .slide .text p {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 30px;
+        word-spacing: 2px;
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    /* company 구역 */
+    #section .company .company_text h2 {
+        font-size: 28px;
+        font-weight: normal;
+    
+    }
+    #section .company .company_text p {
+        font-size: 13px;
+        font-weight: 500;
+        margin: 15px 0 0;
+        line-height: 30px;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+    } 
+    #section .company .company_text {
+        margin: 30px 0 30px;
+        padding: 10px;
+        color: #333;
+    }
+   #section .company .row .product ul > li {
+        float: left;
+        width: 100%;
+        height: 704.5px;
+        padding: 10px;
+   }
+   #section .company .row .product ul > li h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #333;
+}
+
+#section .company .row .product ul > li p {
+    font-size: 12px;
+    margin: 20px 0;
+    color: #333;
+    font-weight: 500;
+    line-height: 28px;
+}
+#section .company .row .product ul > li a {
+    font-family: 'Noto Sans KR';
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+   /* creative 구역 */
+   #section .creative {
+    overflow: hidden;
+    padding: 0px 0;
+    background-color: #fafafa;
+}
+   #section .creative .videobox {
+        float: left;
+        width: 100%; 
+    }
+    #section .creative .textbox {
+        font-family: 'Noto Sans KR', sans-serif;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+        float: left;
+        width: 100%;
+        padding: 0 0 0 0px;
+    }
+    #section .creative .textbox h2 {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.2em;
+    }
+    #section .creative .textbox strong {
+        font-size: 16px;
+        display: block;
+        margin: 30px 0;
+        color: #000;
+        font-weight: 500;
+    }
+    #section .creative .textbox p {
+        font-size: 12px;
+        line-height: 2em;
+        font-weight: 500;
+        color: #333;
+        word-break: keep-all;
+        /*단어잘림 허용안함*/
+    }
+    #section .creative .textbox a {
+        font-size: 12px;
+        font-weight: 500;
+        display: block;
+        margin: 100px 0 0;
+    }
+
+    /* business 구역 */
+    #section .business {
+        padding: 60px 0 0;
+        text-align: center;
+    }
+    #section .business .row .product_img ul li {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+    #section .business .row .textarea {
+        font-family: 'Noto Sans KR', sans-serif;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+        margin: 20 0px;
+        color: #333;
+    }
+    #section .business .row .textarea h2 {
+        font-size: 28px;
+        margin: 0 0 30px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    #section .business .row .textarea p {
+        font-size: 13px;
+        font-weight: 500;
+    }
+    /* best 구역 */
+    #section .best {
+        background: url(../images/banner04.jpg) right center / cover;
+        height: 580px;
+        padding-top: 100px;
+    }
+    #section .best .row h2 {
+        font-size: 28px;
+        font-weight: 400;
+        margin: 0 0 20px;
+    }
+    #section .best .row p {
+        font-size: 13px;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+        line-height: 2em;
+        font-weight: 500;
+    }
+    /* contact 구역 */
+    #section .contact {
+        margin-top: -260px;
+        padding: 0 10px 70px;
+        border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+    }
+    #section .contact .row .map {
+        float: left;
+        width: 100%;
+    }
+    #section .contact .row .query {
+        font-family: 'Noto Sans KR';
+        float: left;
+        width: 100%;
+        height: auto;
+        background: #fff;
+        padding: 30px 0px 0 0px;
+        font-weight: 600;
+        color: #333;
+    }
+    #section .contact .row .query p.btn a {
+        font-size: 14px;
+        padding: 10px 30px;
+        border: 1px solid #000;
+        display: inline-block;
+        background: #000;
+        color: #fff;
+        font-weight: 400;
+        margin-right: 7px;
+    }
+    #section .contact .row .query h3 {
+        font-size: 17px;
+        margin: 0 0 20px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+    }
+    #section .contact .row .query p.greeting {
+        font-size: 14px;
+        margin: 0 0 30px;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+    }
+    #section .contact .row .query p.address {
+        font-size: 12.5px;
+        line-height: 1.8em;
+    }
+    /* footer 구역 */
+    #footer {
+        padding: 30px 20px 20px;
+    }
+    
+    #footer .row {
+        overflow: hidden;
+    } 
+    #footer .row .logo {
+        float: left;
+        height: 65px;
+        line-height: 65px;
+        margin: 0 0 0;
+        width: 100%;
+        display: block;
+    }
+    #footer .row .logo img {
+        width: 200px;
+        height: 65px;
+        display: block;
+    }
+    #footer .row .btmmenu {
+        float: right;
+        height: auto;
+        overflow: hidden;
+        width: 100%;
+        font-family: 'Noto Sans KR';
+        font-weight: 600;
+        float: left;
+        color: #555;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+    }
+    
+    #footer .row .btmmenu .company_info {
+        font-family: 'Noto Sans KR';
+        font-weight: 600;
+        float: left;
+        color: #555;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+        overflow: hidden;
+    }
+    #footer .row .btmmenu .sns {
+        float: right;
+        /* margin :60px 0 0 270px; */
+        overflow: hidden;
+        display: block;
+        width: 100%;
+    }
+    #footer .row .btmmenu .sns > a {
+        padding: 5px;
+        color: #777;
+        font-size: 14px;
+        float: left;
+    }
+    #footer .row .btmmenu .sns a:hover {
+        color: #4169e1;
+    }
+    #footer .row .btmmenu .detail_menu {
+        display: block;
+        width: 100%;
+    }
+    #footer .row .btmmenu .detail_menu a {
+        font-size: 13px;
+        margin: 0 15.5px;
+        padding: 13px 0;
+        display: inline-block;
+    }
+    #footer .row .btmmenu .detail_menu > a:nth-child(1) {
+        margin: 0 15.5px 0 0;
+    }
+    #footer .row .btmmenu .detail_menu > a:nth-child(5) {
+        margin: 0 0 0 15.5px;
+    }
+    
+    #footer .row .btmmenu .address {
+        font-size: 13px;
+        margin: 10px 0 20px;
+        padding: 10px 0;
+    }
+    #footer span {
+        display : block;
+    }
+    #footer span.slash {
+        display : none;
+    }
+}

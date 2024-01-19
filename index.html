@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="./css/animate.css" />
         <link
         rel="stylesheet" href="./css/sample_project_03.css">
+        <link
+        rel="stylesheet" href="./css/rwdsample_project_03.css">
        <script
          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
          integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
@@ -40,6 +42,10 @@
             <div class="row cf">
                 <div class="icon">
                     <h1><a href="#"><img src="./images/logo-2.png"></a></h1>
+                </div>
+                <div class="openmenu">
+                    <span class="blind">openmenu</span>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <div id="nav">
                     <ul class="depth1">
@@ -92,10 +98,10 @@
                     <div class="slide_inner">
                         <div class="slide slide1">
                             <div class="text">
-                                <h2>상상 그 이상의 디자인을 선사하다.</h2>
+                                <h2>감각적인 디자인 확실한 반응성</h2>
                                 <p>
-                                    선샤인은 최고의 크리에이티브와 차별화된 전문 디자인 경험을 바탕으로<br>
-                                    영역의 한계를 넘어 항상 최고의 솔루션을 제공합니다.
+                                    선샤인은 모바일 환경을 고려한<br>
+                                    컨텐츠 최적화 홈페이지 전문회사입니다.
                                 </p>
                             </div>
                         </div>
@@ -110,19 +116,19 @@
                         </div>
                         <div class="slide slide3">
                             <div class="text">
-                                <h2>상상 그 이상의 디자인을 선사하다.</h2>
+                                <h2>창조적인 혁신 글로벌 기업</h2>
                                 <p>
-                                    선샤인은 최고의 크리에이티브와 차별화된 전문 디자인 경험을 바탕으로<br>
-                                    영역의 한계를 넘어 항상 최고의 솔루션을 제공합니다.
+                                    지속적인 최고의 제품 개발로<br>
+                                    글로벌 기업에서 경쟁력을 확보하고 있습니다.
                                 </p>
                             </div>
                         </div>
                         <div class="slide slide4">
                             <div class="text">
-                                <h2>상상 그 이상의 디자인을 선사하다.</h2>
+                                <h2>고객을 위한 최고의 서비스</h2>
                                 <p>
-                                    선샤인은 최고의 크리에이티브와 차별화된 전문 디자인 경험을 바탕으로<br>
-                                    영역의 한계를 넘어 항상 최고의 솔루션을 제공합니다.
+                                    선샤인은 최고의 서비스와 최고의 만족도를<br>
+                                    제공해 드리기 위해 노력합니다.
                                 </p>
                             </div>
                         </div>
@@ -315,20 +321,24 @@
                     <img src="./images/logo_bottom.png" alt="">
                 </div>
                 <div class="btmmenu">
+                    <div class="detail_menu">
+                        <a href="#">COMPANY</a>
+                        <a href="#">BUSINESS</a>
+                        <a href="#">PRODUCT</a>
+                        <a href="#">ONLINE</a>
+                        <a href="#">COMMUNITY</a>
+                    </div>
                     <div class="company_info">
-                        <div class="detail_menu">
-                            <a href="#">COMPANY</a>
-                            <a href="#">BUSINESS</a>
-                            <a href="#">PRODUCT</a>
-                            <a href="#">ONLINE</a>
-                            <a href="#">COMMUNITY</a>
-                        </div>
                         <div class="address">
                             <p>
-                                주소 : 부산광역시 해운대구 좌동 273-10 / 상호 : 디자인선사인 / 사업자등록번호 : 123-456-7890
+                                <span>주소 : 부산광역시 해운대구 좌동 273-10</span><span class="slash">/</span>
+                                <span>상호 : 디자인선사인</span><span class="slash">/</span>
+                                <span>사업자등록번호 : 123-456-7890</span>
                             </p>
                             <p>
-                            Tel : 070-7155-1979 / Fax : 02-2139-1142 / E-mail : gijung23@nate.com
+                            <span>Tel : 070-7155-1979</span><span class="slash">/</span>
+                           <span> Fax : 02-2139-1142</span> <span class="slash">/</span>
+                           <span> E-mail : gijung23@nate.com</span>
                             </p>
                             <p>Copyright ⓒ sunsine.com All Rights Reserved.</p>
                         </div>
@@ -357,6 +367,7 @@
               dots: true, // 번호버튼 표시여부
               speed: 300, // 슬라이드 진출입 속도
               arrows: true, // 이전, 다음 버튼 표시여부
+              fade:true,
               prevArrow:
                 '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="fa-solid fa-chevron-left"></i></button>',
               nextArrow:

@@ -27,7 +27,11 @@ a {
 ul {
     list-style: none;
 }
-
+.blind {
+    position: absolute;
+    left: -9999px;
+    overflow: hidden;
+}
 img {
     width: 100%;
 }
@@ -44,16 +48,21 @@ img {
     z-index: 99;
     background-color: #fff;
 }
+#header .icon a {
+    display: block;
+}
 #header .icon {
     float: left;
-    padding: 10px 0;
+    padding: 14px 0 0;
 }
 
 #header #nav {
     float: right;
     padding: 13px 0 0;
 }
-
+#header .row .openmenu {
+    display: none;
+}
 #header #nav ul.depth1 > li {
     float: left;
     margin: 0px 10px;
@@ -67,6 +76,9 @@ img {
 
 #header #nav ul.depth1 > li:nth-child(1) {
     margin: 0 10px 0 0;
+}
+#header #nav ul.depth1 > li:nth-child(2) {
+    width: 140px;
 }
 #header #nav ul.depth1 > li:nth-child(3) {
     width: 140px;
@@ -105,8 +117,8 @@ img {
     text-align: center;
     background-color: #fff;
 }
-#header #nav ul.depth2 li a {
-    display:block;
+#header #nav ul.depth2 > li > a {
+    display: block;
 }
 
 #header #nav ul.depth2 li:hover {
@@ -201,7 +213,8 @@ img {
     text-align: center;
     color: #fff;
     letter-spacing: -1px;
-    font-family: 'Noto sans KR'
+    font-family: 'Noto sans KR';
+    width: 100%;
 }
 #section .slick-current.slick-active .slide .text h2 {
     animation: fadeInUp 1s 1 both 0.5s;
@@ -417,7 +430,7 @@ img {
 }
 
 #section .best {
-    background: url(../images/banner04.jpg) center / cover;
+    background: url(../images/banner04.jpg) right center / cover;
     height: 580px;
     padding-top: 100px;
 }
@@ -513,17 +526,27 @@ img {
 } 
 #footer .row .logo {
     float: left;
-    text-align: center;
-    line-height: 206px;
-    height: 156px;
-    padding: 0 10px;
+    height: 65px;
+    line-height: 65px;
+    margin: 50px 0 0;
+    width: 30%;
+}
+#footer .row .logo img {
+    width: 200px;
+    height: 65px;
+    display: block;
 }
 #footer .row .btmmenu {
     float: right;
     height: 156px;
-}
-#footer .row .btmmenu {
     overflow: hidden;
+    width: 70%;
+    font-family: 'Noto Sans KR';
+    font-weight: 600;
+    float: left;
+    color: #555;
+    letter-spacing: -1px;
+    word-spacing: 2px;
 }
 
 #footer .row .btmmenu .company_info {
@@ -533,19 +556,26 @@ img {
     color: #555;
     letter-spacing: -1px;
     word-spacing: 2px;
+    overflow: hidden;
 }
 #footer .row .btmmenu .sns {
     float: right;
-    margin :60px 0 0 270px;
+    /* margin :60px 0 0 270px; */
+    overflow: hidden;
+    display: block;
 }
-#footer .row .btmmenu .sns a {
-    display: inline-block;
+#footer .row .btmmenu .sns > a {
     padding: 5px;
     color: #777;
     font-size: 14px;
+    float: left;
 }
 #footer .row .btmmenu .sns a:hover {
     color: #4169e1;
+}
+#footer .row .btmmenu .detail_menu {
+    display: block;
+    width: 100%;
 }
 #footer .row .btmmenu .detail_menu a {
     font-size: 14px;
