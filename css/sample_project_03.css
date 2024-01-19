@@ -48,23 +48,38 @@ img {
     z-index: 99;
     background-color: #fff;
 }
+#header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 90px;
+}
 #header .icon a {
     display: block;
 }
 #header .icon {
-    float: left;
-    padding: 14px 0 0;
+    /* float: left; */
+    padding: 0px 0 0;
+    display: flex;
+}
+#header .icon h1 {
+    display: flex;
+    align-items: center;
 }
 
 #header #nav {
-    float: right;
-    padding: 13px 0 0;
+    /* float: right; */
+    padding: 0px 0 0;
+    display: flex;
 }
 #header .row .openmenu {
     display: none;
 }
+#header #nav ul.depth1 {
+    display: flex;
+}
 #header #nav ul.depth1 > li {
-    float: left;
+    /* float: left; */
     margin: 0px 10px;
     padding: 20px 30px;
     font-family: 'Noto Sans KR';
@@ -72,6 +87,11 @@ img {
     font-weight: 600;
     color: #000;
     letter-spacing: -0.8px;
+    display: flex;
+}
+#header #nav ul.depth1 > li a {
+    display: flex;
+    align-items: center;
 }
 
 #header #nav ul.depth1 > li:nth-child(1) {
@@ -242,7 +262,7 @@ img {
     font-family: 'Noto Sans KR';
     letter-spacing: -1px;
     word-spacing: 2px;
-    margin: 0 0 75px;
+    padding: 0 0 75px;
 }
 
 #section .company .company_text {
@@ -274,12 +294,14 @@ img {
     transform: scale(0.99);
 }
 #section .company .row .product ul {
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
 }
 #section .company .row .product ul > li {
-    float: left;
-    width: 33.3%;
-    height: 704.5px;
+    /* float: left; */
+    /* width: 33.3%; */
+    flex: 1;
+    height: auto;
     padding: 10px;
 }
 
@@ -306,13 +328,17 @@ img {
 
 
 #section .creative {
-    overflow: hidden;
-    padding: 100px 0;
+    /* overflow: hidden; */
+    padding: 80px 0;
     background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
 }
 #section .creative .videobox {
-    float: left;
-    width: 50%;
+    /* float: left;
+    width: 50%; */
+    display: flex;
+    flex: 1;
 }
 #section .creative .videobox video {
     width: 100%;
@@ -322,9 +348,10 @@ img {
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: -1px;
     word-spacing: 2px;
-    float: left;
-    width: 50%;
+    /* float: left;
+    width: 50%; */
     padding: 47px 0 0 140px;
+    flex: 1;
 }
 #section .creative .textbox h2 {
     font-size: 40px;
@@ -390,11 +417,14 @@ img {
     line-height: 2em;
 }
 #section .business .row .product_img ul {
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
+    flex-wrap: wrap;
 }
 #section .business .row .product_img ul li {
-    float: left;
-    width: 20%;
+    /* float: left;
+    width: 20%; */
+    flex: 1 20%;
     padding: 10px;
 }
 #section .business .row .product_img ul li a {
@@ -406,7 +436,7 @@ img {
     transition: all 0.5s;
 }
 #section .business .row .product_img ul li:hover  img{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transform-origin: top center;
 }
 #section .business .row .product_img ul li:hover .reveal {
@@ -462,17 +492,20 @@ img {
     border-bottom: 1px solid rgba(33, 33, 33, 0.1);
 }
 #section .contact .row {
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
 }
 #section .contact .row .map {
-    float: left;
-    width: 50%;
+    /* float: left;
+    width: 50%; */
+    flex: 1;
 }
 #section .contact .row .query {
     font-family: 'Noto Sans KR';
-    float: left;
-    width: 50%;
-    height: 400px;
+    /* float: left;
+    width: 50%; */
+    flex: 1;
+    height: auto;
     background: #fff;
     padding: 60px 24px 0 96px;
     font-weight: 600;
@@ -522,53 +555,64 @@ img {
 }
 
 #footer .row {
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
 } 
 #footer .row .logo {
-    float: left;
-    height: 65px;
+    /* float: left;
+    width: 30%; */
+    flex: 1;
+    /* height: 65px;
     line-height: 65px;
-    margin: 50px 0 0;
-    width: 30%;
+    margin: 50px 0 0; */
+    display: flex;
+    align-items: center;
 }
 #footer .row .logo img {
     width: 200px;
     height: 65px;
     display: block;
+    align-items: center;
 }
 #footer .row .btmmenu {
-    float: right;
-    height: 156px;
-    overflow: hidden;
-    width: 70%;
+    /* float: right;
+    width: 70%; */
+    flex: 3;
+    height: auto;
+    /* overflow: hidden; */
     font-family: 'Noto Sans KR';
     font-weight: 600;
-    float: left;
     color: #555;
     letter-spacing: -1px;
     word-spacing: 2px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #footer .row .btmmenu .company_info {
     font-family: 'Noto Sans KR';
     font-weight: 600;
-    float: left;
+    /* float: left; */
+    flex: 4;
     color: #555;
     letter-spacing: -1px;
     word-spacing: 2px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
 }
 #footer .row .btmmenu .sns {
-    float: right;
+    /* float: right; */
+    flex: 1;
     /* margin :60px 0 0 270px; */
-    overflow: hidden;
-    display: block;
+    /* overflow: hidden; */
+    /* display: block; */
 }
 #footer .row .btmmenu .sns > a {
     padding: 5px;
     color: #777;
     font-size: 14px;
-    float: left;
+    /* float: left; */
+
 }
 #footer .row .btmmenu .sns a:hover {
     color: #4169e1;
